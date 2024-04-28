@@ -1,0 +1,67 @@
+/* navbar.css */
+
+/* Styles for the navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 7%;
+  background-color: #333;
+  color: #fff;
+  transition: 0.5s; /* Smooth transition effect */
+}
+
+/* Styles for the logo */
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+/* Styles for the unordered list (nav links) */
+ul {
+  list-style: none;
+  display: flex;
+}
+
+/* Styles for the list items (individual nav links) */
+ul li {
+  margin-right: 20px;
+}
+
+/* Styles for the search box container */
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+/* Styles for the search input field */
+.search-box input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+/* Styles for the toggle icon (e.g., for toggling dark mode) */
+.toggle-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Dark mode styles */
+.dark .navbar {
+  background: #000;
+  color: #fff;
+}
+
+.dark .search-box {
+  background: #fff;
+}
+
+.dark .search-box input {
+  color: #222;
+}
+
+.dark .search-box input::placeholder {
+  color: #222; /* Fixed typo: 'colour' should be 'color' */
+}
